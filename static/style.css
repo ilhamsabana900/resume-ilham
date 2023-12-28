@@ -1,0 +1,205 @@
+/* Custom styles for dark theme */
+body {
+  font-family: Arial, sans-serif; 
+}
+
+.body-container {
+  background-color: #212529;
+}
+.container{
+    background-color: #212529;
+}
+.navbar {
+    position: fixed; /* Mengunci posisi navbar */
+    width: 100%; /* Menentukan lebar navbar 100% agar menyesuaikan lebar layar */
+    z-index: 100;
+    margin-bottom: auto; /* Menentukan tumpukan navbar di atas elemen lain */
+  }
+
+/* Customize further as per your design */
+/* Gaya khusus untuk tampilan foto dan keterangan di bagian About */
+.profile-picture {
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 200px; /* Atur lebar gambar sesuai kebutuhan */
+  height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
+  object-fit: cover;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .profile-picture img {
+      width: 150px; /* Ubah lebar gambar untuk layar yang lebih kecil */
+      height: 150px; /* Ubah tinggi gambar untuk layar yang lebih kecil */
+      margin-top: 20px; /* Sesuaikan margin atas gambar */
+    }
+  
+    #about {
+      padding-top: 80px; /* Sesuaikan jarak dari atas untuk layar yang lebih kecil */
+    }
+  
+    .about-content {
+      max-width: 80%; /* Sesuaikan lebar maksimum konten untuk layar yang lebih kecil */
+      font-size: 0.9rem; /* Ubah ukuran teks untuk layar yang lebih kecil */
+    }
+}
+
+
+/* about */
+.sosmed {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#about .about-content {
+  max-width: 400px; /* Atur lebar maksimum konten */
+  margin: 0 auto; /* Posisi tengah konten */
+  text-align: justify; /* Ratakan teks ke kanan dan kiri */
+}
+#about h1 {
+  font-size: 2.5rem; /* Atur ukuran font */
+  margin-bottom: 10px; /* Atur jarak bawah */
+  color: white; /* Atur warna teks */
+}
+
+#about p {
+  color: white;
+  margin-bottom: 40px;
+}
+/* skill */
+.skill {
+    width: 40%;
+    margin-bottom: 20px;
+    color: white;
+    margin-bottom: 25px;
+}
+/* Untuk layar berukuran kecil (mode potret pada perangkat mobile) */
+@media (max-width: 576px) {
+    .col-2 {
+      width: 50%; /* Ubah lebar kolom menjadi 50% dari lebar layar saat mode potret */
+    }
+}
+
+#skills h1{
+    color: white;
+    font-size: 70px;
+}
+#skills h4{
+    color: white;
+    font-size: 20px;
+}
+
+/* education */
+#education h1{
+    color: white;
+    font-size: 70px;
+}
+
+#education h4{
+    color: white;
+    font-size: 20px;
+}
+.education {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+/* experience */
+#experience h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+#experience p{
+    color: white;
+    margin-bottom: 20px;
+}
+.sertifikat{
+    background-color: #6f7b88;
+    margin-bottom: 30px;
+}
+/* CSS keyframes untuk animasi */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Pengaturan awal untuk elemen yang di-animasikan */
+  .animate-text {
+    opacity: 0;
+    animation: none; /* Animasi dinonaktifkan awal */
+  }
+  
+  /* Tambahkan kelas animasi saat elemen masuk ke dalam viewport */
+  .animate-text.show {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+/* CSS untuk gambar profil di dalam navbar */
+.profile-image-navbar img {
+  display: block;
+  max-width: 40px;
+  height: auto;
+  transition: opacity 0.3s ease; /* Transisi ketika gambar berubah opacity */
+}
+
+.profile-image-navbar img.hidden {
+  opacity: 0;
+}
+
+/* Gaya untuk menempatkan gambar profil di sebelah nama navbar */
+.navbar-brand {
+  display: none; /* Sembunyikan teks nama navbar */
+}
+
+.profile-image-navbar {
+  order: -1; /* Menempatkan gambar profil di awal navbar */
+  margin-right: 15px; /* Atur jarak antara gambar profil dan elemen lain di navbar */
+}
+
+/* portofolio */
+
+#portofolio h1 {
+  color: white;
+    font-size: 70px;
+}
+.portofolio{
+  margin-bottom: 40px;
+}
+/* Gaya kustom untuk skema warna hitam */
+.custom-footer {
+  background-color: #333;
+  color: white; /* Warna teks */
+}
+
+.social-icon svg {
+  color: white; /* Ubah warna ikon sosial menjadi putih */
+}
+
+/* Penyesuaian untuk spasi atau gaya tambahan lainnya */
+.custom-footer .card-header {
+  background-color: #333; /* Latar belakang yang lebih gelap untuk header */
+}
+
+.custom-footer .card-body {
+  padding: 20px;
+
+}
+
+.custom-footer .card-title {
+  color: white; /* Warna untuk judul kartu */
+}
+.social-icon svg {
+  width: 24px; /* Sesuaikan ukuran yang diinginkan */
+  height: 24px; /* Sesuaikan ukuran yang diinginkan */
+}
+
